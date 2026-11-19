@@ -9,6 +9,7 @@ spec:
     - server: https://kubernetes.default.svc
       namespace: '*'
   sourceRepos:
+    - https://github.com/Famozzy/homelab.git
     - https://bitnami.github.io/sealed-secrets
   clusterResourceWhitelist:
   - group: "*"
