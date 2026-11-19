@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: apps
+  name: homelab
   namespace: argocd
 spec:
   destinations:
@@ -11,8 +11,8 @@ spec:
   sourceRepos:
     - https://github.com/Famozzy/homelab.git
   clusterResourceWhitelist:
-  - group: "*"
-    kind: "*"
+    - group: "*"
+      kind: "*"
   namespaceResourceWhitelist:
-  - group: "*"
-    kind: "*"
+    - group: "*"
+      kind: "*"

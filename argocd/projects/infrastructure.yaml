@@ -12,8 +12,8 @@ spec:
     - https://github.com/Famozzy/homelab.git
     - https://bitnami.github.io/sealed-secrets
   clusterResourceWhitelist:
-  - group: "*"
-    kind: "*"
+    - group: "*"
+      kind: "*"
   namespaceResourceWhitelist:
-  - group: "*"
-    kind: "*"
+    - group: "*"
+      kind: "*"
