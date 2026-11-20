@@ -11,6 +11,7 @@ spec:
   sourceRepos:
     - https://github.com/Famozzy/homelab.git
     - https://bitnami.github.io/sealed-secrets
+    - https://charts.jetstack.io
   clusterResourceWhitelist:
     - group: "*"
       kind: "*"
