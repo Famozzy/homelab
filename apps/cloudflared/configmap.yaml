@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cloudflared-config
+  namespace: default
+data:
+  config.yaml: |
+    no-autoupdate: true
+    loglevel: info
+    ingress:
+      - hostname: pdf.famozzy.dev
+        service: http://bento-pdf.default.svc.cluster.local:8080
+
+      - hostname: argocd.famozzy.dev
+        service: https://argocd-server.argocd.svc.cluster.local:443
+        originRequest:
+          noTLSVerify: true
+
+      - hostname: dash.famozzy.dev
+        service: http://grafana.monitoring.svc.cluster.local:3000
+
+      - service: http_status:404
